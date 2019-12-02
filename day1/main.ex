@@ -37,6 +37,7 @@ end
 defmodule Day1 do
   def getAnswer() do
     input = AdventOfCodeInputRequester.get('1')
-    IO.puts(ProcessList.process(input))
+    processed = :string.split(input, "\n", :all)
+    IO.puts(ProcessList.process(processed))
   end
 end

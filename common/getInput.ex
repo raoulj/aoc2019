@@ -1,6 +1,6 @@
 defmodule AdventOfCodeInputRequester do
   def get(day) do
-    :string.split(fetch(day), "\n", :all)
+    fetch(day)
   end
 
   defp fetch(day) do
